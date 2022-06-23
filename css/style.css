@@ -4,6 +4,16 @@ body
     box-sizing: border-box;
 }
 
+:root
+{
+    --footer-bg: #1F2937;
+    --bttn-bg:#3882F6;
+    --logo: #F9FAF8;
+    --header-text: #E5E7EB;
+
+    
+}
+
 header
 {
     display: flex;
