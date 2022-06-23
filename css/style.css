@@ -1,0 +1,55 @@
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+nav
+{
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul
+{
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+}
+
+header > div
+{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+header .header-sign-up
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.img-placeholder
+{
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
