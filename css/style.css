@@ -1,9 +1,3 @@
-body
-{
-    margin: 0;
-    box-sizing: border-box;
-}
-
 :root
 {
     --footer-bg: #1F2937;
@@ -14,15 +8,24 @@ body
     
 }
 
+body
+{
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
 header
 {
+    
     display: flex;
     flex-direction: column;
 }
 
 nav
 {
-    border: 2px solid;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -62,4 +65,28 @@ header .header-sign-up
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+main
+{
+    
+    flex:1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+section.border
+{
+    width:100%;
+    border: 2px solid blue;
+
 }
