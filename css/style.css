@@ -20,24 +20,18 @@ body
     flex-direction: column;
 }
 
-header,footer, section, .section-quote
+header, section, footer
 {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 7em;
+    padding-right: 7em;
+    box-sizing: border-box;
 }
 
-.bttn
-{
-    padding: .25em 1em;
-    margin-top: 1em;
-    color: white;
-    background-color: #3882F6;
-    border-radius: 4px;
-    display: inline;
-}
+
 
 h2
 {
+    margin: 0;
     font-size: 36px;
 }
 
@@ -63,7 +57,7 @@ nav
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -87,7 +81,7 @@ header > div
 {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2em;
     margin-top: 4em;
 }
@@ -110,8 +104,8 @@ header .header-sign-up
 {
     background-color: gray;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
     width: clamp(270px,300px,330px);
     aspect-ratio: 16/9;
 }
@@ -123,7 +117,7 @@ main
     flex:1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 
 }
 
@@ -134,14 +128,20 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width:100%;
+    flex-basis: 0;
     flex:1;
+
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 /*MAIN - SECTION 1*/
 
 .row-container
 {
+    margin-top: 2em;
     display: flex;
     gap: 2em;
 }
@@ -171,8 +171,14 @@ section
 .section-quote
 {
     background-color: var(--header-text);
-    padding: 0 5em;
     
+}
+
+.quote
+{
+    font-size: 36px;
+    font-style: italic;
+    color: var(--footer-bg);
 }
 
 .author
@@ -184,15 +190,48 @@ section
 
 .modal
 {
-    border: 2px solid blue;
+    border: 2px solid var(--bttn-bg);
+    background-color: var(--bttn-bg);
+    color: var(--logo);
+    border-radius: 5px;
+
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 4em;
+    padding: 2em 4em;
+
+}
+
+.modal .text
+{
+    font-size: 14px;
+}
+
+
+.modal > .bttn
+{
+    border: 2px solid var(--logo);
 }
 
 /*FOOTER*/
 
 footer
 {
+    background-color: var(--footer-bg);
+    color: var(--header-text);
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: flex;
     justify-content: center;
+}
+
+.bttn
+{
+    padding: .25em 1em;
+    margin-top: 1em;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 4px;
+    display: inline;
 }
